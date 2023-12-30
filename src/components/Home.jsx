@@ -53,25 +53,13 @@ export default function Home() {
                 <div className="content">
                     {
                         blogs.map((blog) => (
-                            // <div className="home" key={blog.id}>
-                            //     <div className="data" >
-                            //         <div className="part1" >
-                            //             <h2>author : {blog.author}</h2>
-                            //             <p>Data : {blog.body}</p>
-                            //         </div>
-                            //         <div className="part2">
-                            //             <Link to={'/create/'+ blog.id}> <button id='btn1'>Edit</button> </Link>
-                            //             <button id='btn2' onClick={(e) => {
-                            //                 handleDelete(e,blog.id)
-                            //             }}>Delete</button>
-                            //         </div>
-                            //     </div>
-                            // </div>
                             <div className="container" key={blog.id} style={{
-                                margin:"2%",
-                                padding:"1%"
+                                margin:"1%",
+                                padding:"1%",
                             }}>
-                                <div class="card" >
+                                <div class="card" style={{
+                                margin:"1%",
+                            }} >
                                     <div class="card-header  bg-success-subtle text-emphasis-success" >
                                         {blog.author}
                                     </div>
