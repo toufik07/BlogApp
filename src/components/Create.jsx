@@ -29,6 +29,9 @@ export default function Create() {
   }, [])
 
   function submitData(e) {
+
+    e.preventDefault()
+    
     const data = {
       title,
       body,
