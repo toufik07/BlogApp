@@ -5,8 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Home() {
 
 
-    const [blogs, setBlogs] = useState(null)
+    const [blogs, setBlogs] = useState([])
     const [load, setLoad] = useState(true)
+
+    useEffect(() => {
+        console.log("data");
+        loadData();
+    }, [])
 
     function loadData() {
         // setLoad(true)
@@ -39,10 +44,7 @@ export default function Home() {
     // if we provide an dependancies then it can call only when the depencies will change like 
     // if difine dependancies as [name] then whenever the name changes the useeffect will be call
     // in every it call once when the component render
-    useEffect(() => {
-        console.log("data");
-        loadData();
-    }, [])
+   
 
     return (
         <>

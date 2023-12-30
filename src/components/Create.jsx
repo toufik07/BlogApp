@@ -30,8 +30,8 @@ export default function Create() {
 
   function submitData(e) {
 
-    e.preventDefault()
-    
+     e.preventDefault()
+
     const data = {
       title,
       body,
@@ -61,8 +61,6 @@ export default function Create() {
           setPending(false)
         })
     }
-
-
     navigate("/")
   }
 
