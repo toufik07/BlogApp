@@ -1,10 +1,7 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin :0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +32,108 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Navbar css */
+
+.navbar{
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.nav1 h1{
+  color:red;
+}
+.nav1{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.nav2{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+.link{
+  text-decoration: none;
+}
+.home{
+  width: 100%;
+  margin:1%;
+  display: flex;
+  justify-content: center;
+}
+.data{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  background-color: whitesmoke;
+  border: 1px solid black;
+}
+.part1{
+  width: 70%;
+  padding: 1%;
+}
+.part2{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  margin:1%
+}
+#btn1{
+  background-color: blue;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  margin:1%;
+}
+
+#btn2{
+  background-color: red;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  margin:1%;
+}
+
+.data:hover{
+  box-shadow: 2px 1px 5px 1px black;
+}
+
+.nav2 li:hover{
+  font-size: large;
+  font-weight: bold;
+}
+
+.BlogCreate{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  padding: 1%;
+}
+#btncreate{
+  background-color: blue;
+  color: white;
+  border: none;
+  margin:1%;
+  width: 100px;
+  height: 30px;
+  align-self: flex-end;
 }
