@@ -9,7 +9,7 @@ export default function Home() {
     const [load, setLoad] = useState(true)
 
     useEffect(() => {
-        console.log("data");
+        // console.log("data fetch");
         loadData();
     }, [])
 

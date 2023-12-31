@@ -20,7 +20,6 @@ export default function Create() {
     if (id != undefined) {
       axios.get("https://6588549890fa4d3dabf9c2e2.mockapi.io/blogs/" + id)
         .then((res) => {
-          console.log(res.data);
           setTitle(res.data.title)
           setBody(res.data.body)
           setAuthor(res.data.author)
@@ -42,11 +41,12 @@ export default function Create() {
     if (id === undefined) {
       axios.post("https://6588549890fa4d3dabf9c2e2.mockapi.io/blogs", data)
         .then((res) => {
-          console.log("data added");
+          // console.log("data added");
           setTitle("")
           setBody("")
           setAuthor("")
           setPending(false)
+          navigate("/")
         })
         .catch((rej) => {
           console.log(rej);
@@ -59,9 +59,10 @@ export default function Create() {
           setBody("")
           setAuthor("")
           setPending(false)
+          navigate("/")
         })
     }
-    navigate("/")
+    
   }
 
   return (
